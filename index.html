@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Silly Slight</title>
+</head>
+
+<body>
+	<div>
+    
+        <input type="button" value="hide" id="message_toggle" />
+        <p id="message">This is paragraph to hid and show</p>
+
+        <p id="message1" style="display:none">This is second paragraph to show</p>
+        <img id="imag" src="images/image.jpg" />
+
+
+    </div>
+
+
+    
+
+    <script src="js/jquery.js"></script>
+<script>
+    $('#message_toggle').click(function () {
+        $('#message').hide();
+    });
+
+    $(document).ready(function () {
+        $('#message1').show('slow');
+
+    });
+
+    //$(document).ready(function () {
+    //    alert('document is ready');
+    //});
+
+    $('#imag').load(function () {
+        alert('image is loaded');
+    });
+</script>
+</body>
+
+</html>
